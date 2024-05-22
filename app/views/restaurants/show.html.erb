@@ -1,0 +1,17 @@
+<div class="container">
+  <h1><%= @restaurant.name %></h1>
+  <div class="border-bottom">
+  <p class="alert alert-dark rounded">
+  <strong><%= @restaurant.category.capitalize %><br></strong>
+  Adress : <%= @restaurant.address %><br>
+  Phone : <%= @restaurant.phone_number %><br>
+
+  </p>
+
+  <%= link_to "Add a new review", new_restaurant_review_path(@restaurant), class: "btn btn-primary" %>
+  </div>
+
+  <%= link_to "Back to list", restaurants_path %>
+
+  </div>
+ <p></p>
